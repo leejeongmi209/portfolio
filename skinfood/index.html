@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
+	<mata name="description" content="건강한 화장품을 판매하는 skinfood입니다." />
+	<meta name="author" content="skinfood" />
+	<title>SKINFOOD</title>
+	<link rel="stylesheet" href="css/index_pc.min.css" media="screen and (min-width: 801px)" />
+	<link rel="stylesheet" href="css/index_m.min.css" media="screen and (max-width: 800px)" />
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body class="index">
+	<a href="#main" id="skip_nav">본문바로가기</a>
+	<main id="main">
+		<section class="section_top">
+			<article>
+				<div>
+					<img src="img/main_slide01.jpg" alt="">
+					<img src="img/main_slide01_s.jpg" alt="">
+				</div>
+				<div>
+					<h1>FOOD&amp;BEAUTY LIFESTYLE BRAND</h1>
+					<div>
+						<a href="skinfood_main.html">
+							<p>쇼핑몰</p>
+							<p>바로가기</p>
+							<img src="img/mainarrow.png" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="section_center">
+			<article>
+				<div>
+					<img src="img/index_2.jpg" alt="">
+					<img src="img/index_2_s.jpg" alt="">
+				</div>
+				<div>
+					<h2>Better Food</h2>
+					<p>GOOD FOOD FOR HEALTH IS ALSO GOOD FOR THE SKIN</p>
+					<p>Food cosmetics, SKINFOOD</p>
+					<div>
+						<a href="#">
+							<p>브랜드</p>
+							<p>바로가기</p>
+							<img src="img/mainarrow.png" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div>
+					<img src="img/index_3.jpg" alt="">
+					<img src="img/index_3_s.jpg" alt="">
+				</div>
+				<div>
+					<h2>Better Beauty</h2>
+					<p>GOOD FOOD FOR HEALTH IS ALSO GOOD FOR THE SKIN</p>
+					<p>Food cosmetics, SKINFOOD</p>
+					<div>
+						<a href="#">
+							<p>이벤트</p>
+							<p>바로가기</p>
+							<img src="img/mainarrow.png" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="section_bottom">
+			<article>
+				<div>
+					<img src="img/index_4.jpg" alt="">
+					<img src="img/index_4_s.jpg" alt="">
+				</div>
+				<div>
+					<h3>SKINCARE</h3>
+					<div>
+						<a href="#">
+							<p>GO</p>
+							<img src="img/mainarrow.png" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div>
+					<img src="img/index_5.jpg" alt="">
+					<img src="img/index_5_s.jpg" alt="">
+				</div>
+				<div>
+					<h3>MAKEUP</h3>
+					<div>
+						<a href="#">
+							<p>GO</p>
+							<img src="img/mainarrow.png" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div>
+					<img src="img/index_6.jpg" alt="">
+					<img src="img/index_6_s.jpg" alt="">
+				</div>
+				<div>
+					<h3>BODY&amp;HAIR</h3>
+					<div>
+						<a href="#">
+							<p>GO</p>
+							<img src="img/mainarrow.png" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<script>
+		'use strict';
+		/*scroll이 일정 지점 이상 내려가면 section에 move 클래스를 추가합니다.*/
+		$('.section_top > article').addClass('move');
+
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > $('.section_top > article').offset().top) {
+				$('.section_center > article').addClass('move');
+			}
+			if ($(window).scrollTop() > $('.section_center > article').offset().top) {
+				$('.section_bottom > article').addClass('move');
+			}
+		});
+	</script>
+</body>
+
+</html>

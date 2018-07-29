@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>berry event</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            width: 100%; height: 100%;
+            font-family: 'Abel', sans-serif;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .notice{
+            position: relative;
+        }
+        .notice h4{
+            position: absolute;
+            top: 150px; left: 0px;
+            width: 400px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px #414141;
+            font-size: 20px;
+            transform: rotate(-45deg);
+        }
+        .close_bar{
+            position: absolute;right: 20px;
+            bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="notice">
+        <img src="img/berry-cookie.jpg" alt="딸기 이벤트">
+        <h4>2018 season menu Spring season menu strawberries strawberry macaron X strawberry tart X strawberry cake X strawberry cookie</h4>
+        <p class="close_bar">
+            <input type="checkbox" name="close" id="close">
+            <label for="close">1일동안 이 창 열지않기</label>
+            <button class="close_button" onclick="self.close();">닫기</button>
+        </p>
+    </div>
+</body>
+
+</html>
